@@ -19,6 +19,8 @@ New Yorker is engineered specifically to target and maximize judge scoring acros
 | **MongoDB [MLH]** | **Best Use of MongoDB Atlas** | Stores rolling visual session memory, vector embeddings for localized transit points-of-interest (POIs), station maps, and cached real-time MTA alerts with Atlas Vector Search. |
 | **DigitalOcean [MLH]** | **Best Use of DigitalOcean** | Production hosting of the FastAPI visual state engine and WebSocket stream orchestrator via DigitalOcean App Platform & Droplet compute. |
 | **.Tech Domains [MLH]** | **Best .Tech Domain Name** | Configured and live under `livelens.tech` for the web app frontend and API gateway. |
+| **Cursor** | **Best Use of Cursor** | Built end to end in Cursor: agent-driven implementation of the streaming WebSocket pipeline, Gemini tool definitions, and the React HUD, with live on-device debugging of latency and iPad audio routing. |
+| **SpaceX** | **Best Real-Time Systems Engineering** | A hard latency budget treated like flight software: continuous camera telemetry, a rolling visual state machine, and a sub-second perception-to-voice loop with graceful degradation when any upstream service stalls. |
 
 ---
 
