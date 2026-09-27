@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    touch-action: manipulation;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, monospace;
+    background-color: #030712;
+    overflow: hidden;
+  }
+
+  /* The HUD locks the viewport; the landing page needs to scroll and breathe. */
+  body.landing-mode {
+    background-color: #ffffff;
+    overflow: auto;
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+/* New Yorker brand: MTA subway bullets in official line colors */
+.mta-bullet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 900;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.mta-yellow { background: #FCCC0A; color: #000; }
+.mta-orange { background: #FF6319; color: #FFF; }
+.mta-blue   { background: #0039A6; color: #FFF; }
+.mta-green  { background: #00933C; color: #FFF; }
+.mta-red    { background: #EE352E; color: #FFF; }
+.mta-offline { background: rgba(167, 169, 172, 0.3); color: rgba(255, 255, 255, 0.55); }
+
+.mta-lit {
+  box-shadow: 0 0 16px rgba(252, 204, 10, 0.5);
+}
+
+/* Iron Man Holographic Glass Panel */
+.stark-panel {
+  background: linear-gradient(135deg, rgba(2, 14, 28, 0.75) 0%, rgba(5, 23, 44, 0.6) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.15), inset 0 0 15px rgba(0, 240, 255, 0.05);
+  position: relative;
+}
+
+/* Chamfered Sci-Fi Cutout Corners */
+.stark-cut {
+  clip-path: polygon(
+    12px 0, 100% 0, 
+    100% calc(100% - 12px), calc(100% - 12px) 100%, 
+    0 100%, 0 12px
+  );
+}
+
+.stark-cut-inv {
+  clip-path: polygon(
+    0 0, calc(100% - 12px) 0, 
+    100% 12px, 100% 100%, 
+    12px 100%, 0 calc(100% - 12px)
+  );
+}
+
+/* Neon Text Glow */
+.stark-text-glow {
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.8), 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
+.stark-gold-glow {
+  text-shadow: 0 0 8px rgba(255, 184, 0, 0.8), 0 0 20px rgba(255, 184, 0, 0.4);
+}
+
+/* Scanline Effect */
+.stark-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 240, 255, 0.03) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.02),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.02)
+  );
+  background-size: 100% 4px, 6px 100%;
+}
+
+/* Arc Reactor Concentric Rings */
+.arc-ring-outer {
+  border: 1px dashed rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+}
+
+.arc-ring-inner {
+  border: 2px solid rgba(0, 240, 255, 0.6);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.5), inset 0 0 15px rgba(0, 240, 255, 0.3);
+}
+
+/* Subtle Sci-Fi Corner Accents */
+.corner-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #00F0FF;
+  border-left: 2px solid #00F0FF;
+}
+
+.corner-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #00F0FF;
+  border-right: 2px solid #00F0FF;
+}
+
+.corner-bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #00F0FF;
+  border-left: 2px solid #00F0FF;
+}
+
+.corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #00F0FF;
+  border-right: 2px solid #00F0FF;
+}

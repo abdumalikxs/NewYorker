@@ -1,0 +1,5 @@
+# Host-built node_modules carries platform-specific binaries (esbuild), which
+# break the linux container if copied over the image's own install.
+node_modules
+dist
+.git
