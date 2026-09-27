@@ -1,16 +1,16 @@
-# LiveLens 👁️🎙️
+# New Yorker 👁️🎙️
 
 > **Real-time, hands-free spatial AI companion that watches live video, interprets physical environments with rolling visual context, and executes agentic actions across 30+ languages.**
 
-LiveLens transforms multimodal AI from passive snapshot analysis into an active, hands-free urban navigator. By combining continuous low-latency camera sampling, visual memory state tracking, natural multilingual voice feedback, and native iMessage integration, LiveLens eliminates "app fatigue" and language barriers for immigrants, tourists, and visually impaired transit riders.
+New Yorker transforms multimodal AI from passive snapshot analysis into an active, hands-free urban navigator. By combining continuous low-latency camera sampling, visual memory state tracking, natural multilingual voice feedback, and native iMessage integration, New Yorker eliminates "app fatigue" and language barriers for immigrants, tourists, and visually impaired transit riders.
 
 ---
 
 ## 🏆 Hackathon Tracks & Sponsor Alignment
 
-LiveLens is engineered specifically to target and maximize judge scoring across the following hackathon prize tracks:
+New Yorker is engineered specifically to target and maximize judge scoring across the following hackathon prize tracks:
 
-| Track / Sponsor | Prize Category | How LiveLens Integrates |
+| Track / Sponsor | Prize Category | How New Yorker Integrates |
 | :--- | :--- | :--- |
 | **Capital One** | **Best Use of Nessie** | Autonomous **Agentic Transit Budgeting & Micropayments**: Queries customer account balances via Nessie API before fare gates, automates OMNY/transit card top-ups, audits daily commuter spend against budget goals, and alerts users of fare eligibility/discounts. |
 | **Google Cloud / MLH** | **Best Use of Gemini API** | Continuous multimodal frame processing, spatial awareness, street sign/transit advisory translation, and dynamic intent extraction from live video streams. |
@@ -28,7 +28,7 @@ LiveLens is engineered specifically to target and maximize judge scoring across 
 - **Multimodal Gap:** Standard LLM wrappers only handle single photo uploads. They lack a **rolling visual state**—failing to remember that you just passed the turnstile when you look down at a platform sign 15 seconds later.
 - **Accessibility & Language Barriers:** Over 25 million non-English proficient citizens and millions of visually impaired travelers face confusing, printed detour notices, broken escalator signs, and complex transit hubs daily.
 
-**LiveLens bridges this gap:** Point your camera, speak naturally in any language, hear instant directional audio in your ear, and get actionable offline itineraries texted straight to your iMessage.
+**New Yorker bridges this gap:** Point your camera, speak naturally in any language, hear instant directional audio in your ear, and get actionable offline itineraries texted straight to your iMessage.
 
 ---
 
@@ -88,7 +88,7 @@ Multimodal Vision & Intent    Streaming   Atlas Vector     Native iMessage Agent
 ## 📂 Repo Layout
 
 ```text
-LiveLens/
+NewYorker/
 ├── README.md               # Project documentation & hackathon submission brief
 ├── docker-compose.yml      # Local orchestration for dev/testing
 ├── backend/                # FastAPI Visual State & Agent Service
